@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('http://storge.pic2.me/c/1360x800/699/fon%20(59).jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1180px;
+  margin: 30px auto;
+  padding: 0 15px;
+  font-family: 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+}
+
+.form {
+  width: 90%;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px 0;
+  margin-bottom: 30px;
+  background-color: #3a6080;
+}
+
+.form-text {
+  border-radius: 15px 0;
+}
+
+.form-text,
+.form-btn {
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  min-width: 205px;
+}
+
+.form-btn {
+  border-radius: 0 15px;
+  cursor: pointer;
+  transition: background .2s ease-in;
+}
+
+.form-btn:hover {
+  background-color: #82b5df;
+}
+
+.box-parent {
+  display: flex;
+  justify-content: center;
+  font-family: monospace, serif, sans-serif;
+  width: 100%;
+}
+
+.box-column {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 10px 0;
+  font-size: 18px;
+  min-height: 500px;
+  margin-bottom: 30px;
+}
+
+.box-column-left-ru {
+  border-right: 3px solid #fff;
+  background-color: #83dd83;
+  border-radius: 40px 10px 40px;
+}
+
+.box-column-right-en {
+  background-color: #d65e5e;
+  border-radius: 10px 40px 10px;
+}
+
+.new-text-left-ru,
+.new-text-right-en {
+  letter-spacing: 1px;
+  line-height: 1.2;
+  color: #171799;
+  font-weight: 600;
+  padding-left: 40px;
+}
+
+.reset-value-btn {
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #3a6080;
+  color: #c0baba;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0 20px 0 20px;
+  min-width: 80%;
+  transition: all .3s ease-in-out;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.reset-value-btn:hover {
+  border-radius: 20px 0 20px 0;
+  color: #fff;
+}
+
+
+@media (max-width: 860px) {
+  .box-parent {
+    justify-content: space-evenly;
+  }
+
+  .box-column-left-ru {
+    border-right: none;
+  }
+}
+
+@media (max-width: 670px) {
+  .form {
+    margin-bottom: 20px;
+    padding: 25px;
+  }
+
+  .form-text, 
+  .form-btn {
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+  .box-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-column {
+    width: 80%;
+  }
+
+  .box-column-left-ru {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .form-text, 
+  .form-btn {
+    width: 100%;
+  }
+
+  .form-text {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  #wrapper {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .form,
+  .reset-value-btn {
+    width: 100%;
+  }
+
+  #wrapper {
+    padding: 0 10px;
+  }
+
+  .box-column {
+    width: 100%;
+  }
+}
